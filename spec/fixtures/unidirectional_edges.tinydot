@@ -1,0 +1,3 @@
+digraph "sample" do
+  a >> b >> c
+end

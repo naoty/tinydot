@@ -1,0 +1,7 @@
+digraph <%= @name %> {
+  <%- @nodes.each do |node| -%>
+  <%- node.edges.each do |edge| -%>
+  <%= edge.to_dot %>
+  <%- end -%>
+  <%- end -%>
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "tinydot"
+Tinydot::Command.start(ARGV)
