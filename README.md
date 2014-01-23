@@ -21,6 +21,8 @@ $ tinydot convert sample.tinydot
 ## Examples
 
 ```rb
+# sample.tinydot
+
 digraph "sample" do
   a >> b >> c
   a <=> d
@@ -31,6 +33,8 @@ end
 is equivalent to
 
 ```dot
+// sample.dot
+
 digraph sample {
   a -> b;
   b -> c;
