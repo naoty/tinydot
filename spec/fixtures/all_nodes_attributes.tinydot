@@ -1,0 +1,4 @@
+digraph "sample" do
+  node shape: "box", fontname: "Osaka", style: "styled", fillcolor: "#ECF0F1"
+  a >> b >> c
+end

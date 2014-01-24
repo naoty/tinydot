@@ -1,4 +1,19 @@
 digraph <%= @name %> {
+  <%- unless @attrs.empty? -%>
+  <%= "graph [#{attrs_to_dot}];" %>
+  <%- end -%>
+  <%- unless @node_attrs.empty? -%>
+  <%= "node [#{node_attrs_to_dot}];" %>
+  <%- end -%>
+  <%- if !(@attrs.empty? && @node_attrs.empty?) -%>
+
+  <%- end -%>
+  <%- @nodes.select { |node| !node.attrs.empty? }.each do |node| -%>
+  <%= "#{node.name} [#{node.to_dot}];" %>
+  <%- end -%>
+  <%- if !@nodes.select { |node| !node.attrs.empty? }.empty? -%>
+
+  <%- end -%>
   <%- @nodes.each do |node| -%>
   <%- node.edges.each do |edge| -%>
   <%= edge.to_dot %>

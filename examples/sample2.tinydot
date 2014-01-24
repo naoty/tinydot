@@ -1,0 +1,15 @@
+digraph "sample2", rankdir: "LR" do
+  node shape: "record", style: "filled", fontname: "Osaka", fillcolor: "#ECF0F1"
+
+  a "Label 1"
+  b "Label 2"
+  c "Label 3", fillcolor: "#27AE60"
+  d "Label 4", fillcolor: "#F1C40F"
+  e "Label 5", fillcolor: "#E74C3C"
+
+  a <=> b
+  a <=> c
+  b >> d
+  d <=> e
+  d >> a
+end

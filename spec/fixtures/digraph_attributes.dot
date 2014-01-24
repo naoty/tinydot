@@ -1,0 +1,6 @@
+digraph sample {
+  graph [rankdir = LR];
+
+  a -> b;
+  b -> c;
+}

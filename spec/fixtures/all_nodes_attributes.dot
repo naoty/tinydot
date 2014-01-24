@@ -1,0 +1,6 @@
+digraph sample {
+  node [shape = box, fontname = "Osaka", style = styled, fillcolor = "#ECF0F1"];
+
+  a -> b;
+  b -> c;
+}

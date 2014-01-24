@@ -1,0 +1,8 @@
+digraph "sample" do
+  a "index.html"
+  b "show.html"
+  c "new.html", fillcolor: "#E74C3C"
+
+  a <=> b
+  a >> c
+end

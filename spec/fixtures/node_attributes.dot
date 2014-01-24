@@ -1,0 +1,8 @@
+digraph sample {
+  a [label = "index.html"];
+  b [label = "show.html"];
+  c [label = "new.html", fillcolor = "#E74C3C"];
+
+  a -> b [dir = both];
+  a -> c;
+}

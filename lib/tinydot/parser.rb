@@ -6,8 +6,8 @@ module Tinydot
       graph.to_dot
     end
 
-    def digraph(title, &block)
-      digraph = Digraph.new(title)
+    def digraph(title, attrs = {}, &block)
+      digraph = Digraph.new(title, attrs)
       digraph.instance_eval(&block)
       digraph
     end
