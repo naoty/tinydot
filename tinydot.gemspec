@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "tinydot"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Naoto Kaneko"]
   spec.email         = ["naoty.k@gmail.com"]
   spec.summary       = %q{Tiny language alternative to DOT.}
